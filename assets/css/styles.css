@@ -204,6 +204,8 @@ section{
     height: 36px;
 }
 
+.menu{ display: none; }
+
 /*
 ########################
 # Btn next and preview #
@@ -219,7 +221,7 @@ section{
     position: absolute;
     right: -16px;
     font-size: 18px;
-    top: 60px;
+    top: 45%;
     box-shadow: 0 0 2.8px #000;
     display: flex;
     justify-content: center;
@@ -375,4 +377,70 @@ footer{
     background-color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+/*
+################
+# Mediaqueries #
+################
+*/
+@media screen and (max-width: 943px){
+    .gallery{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .gallery img:nth-child(5){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 828px){
+    .gallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .gallery img:nth-child(4){
+        display: none;
+    }
+
+    .featured-users{
+        display: none;
+    }
+
+    .news{
+        display: none;
+    }
+
+    .feed{
+        grid-template-columns: 1fr;
+    }
+
+    .navigation .links-pages{
+        position: fixed;
+        background: #fff;
+        top: 56px;
+        right: 0;
+        flex-direction: column;
+        height: 100vh;
+        padding: 20px;
+        width: 75%;
+
+        display: none;
+    }
+
+    .gallery .next-courses{
+        display: none;
+    }
+
+    .buttons-group{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery img:nth-child(3){
+        display: none;
+    }
 }
