@@ -9,9 +9,20 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: #eee;
+}
+
 .title{
     margin-top: 20px;
+    font-size: 16px;
 }
+
+section{
+    margin-bottom: 50px;
+}
+
+
 
 /*
 #############
@@ -23,6 +34,10 @@
     padding-left: .9375rem;
     margin-right: auto;
     margin-left: auto;
+}
+
+.main{
+    margin-top: 90px;
 }
 
 /*
@@ -41,6 +56,7 @@
 
 .gallery img{
     width: 100%;
+    border-radius: 8px;
 }
 
 /*
@@ -53,6 +69,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-color: #fff;
+    box-shadow: 0 0 0.7px;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .navigation .links-pages{
@@ -61,8 +85,63 @@
 }
 
 .navigation .links-pages li{
-    text-decoration: none;
     list-style: none;
     padding: 0 8px;
 }
 
+.navigation .links-pages li a{
+    text-decoration: none;
+    font-style: normal;
+    color: #777777;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px
+}
+
+/*
+#################
+# Buttons Group #
+#################
+*/
+.buttons-group{
+    margin-right: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-group a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
+
+    margin: 0 5px;
+}
+
+.buttons-group a.btn-full{
+    background: #1192EE;
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 6px;
+
+    width: 107px;
+    height: 36px;
+}
+
+/*
+##########
+# Footer #
+##########
+*/
+footer{
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
