@@ -140,6 +140,8 @@ section{
     margin: 10px;
     min-height: 40vh;
 
+    transition: all 2s;
+
     /* display: grid; */
     display: none;
     grid-template-columns: repeat(3, 1fr);
@@ -148,6 +150,7 @@ section{
 .dropdown-content .item{
     display: flex;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .dropdown-content .item .icon{
