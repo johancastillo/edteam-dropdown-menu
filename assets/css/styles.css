@@ -20,6 +20,7 @@ body{
 
 section{
     margin-bottom: 50px;
+    position: relative;
 }
 
 .next-courses{
@@ -54,8 +55,8 @@ section{
 #############
 */
 .container{
-    padding-right: .9375rem;
-    padding-left: .9375rem;
+    padding-right: 1.9375rem;;
+    padding-left: 1.9375rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -101,6 +102,7 @@ section{
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 99;
 }
 
 .navigation .links-pages{
@@ -196,6 +198,28 @@ section{
 
     width: 107px;
     height: 36px;
+}
+
+/*
+########################
+# Btn next and preview #
+########################
+*/
+.btn-next{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    color: #1192ee;
+    position: absolute;
+    right: -16px;
+    font-size: 18px;
+    top: 60px;
+    box-shadow: 0 0 2.8px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*
