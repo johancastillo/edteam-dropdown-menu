@@ -6,6 +6,7 @@
 const dropdownMenu = document.getElementById("dropdown-menu")
 const dropdownContent = document.getElementById("dropdown-content")
 const arrow = document.getElementById("arrow")
+const loader = document.getElementById("loader")
 
 /*
 ##########
@@ -29,6 +30,15 @@ dropdownContent.addEventListener("mouseleave", () => {
 
 // dropdownMenu.addEventListener("mouseleave", () => dropdownContent.style.display = "none")
 
+/*
+##########
+# Loader #
+##########
+*/
+setTimeout(() => {
+    loader.style.display = "none"
+    document.body.style.overflow = "visible"
+}, 1500)
 
 
 
